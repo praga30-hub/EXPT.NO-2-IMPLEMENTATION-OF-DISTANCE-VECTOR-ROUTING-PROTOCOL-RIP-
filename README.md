@@ -3,14 +3,18 @@
 
 To connect computers in multiple networks using Distance Vector Routing Protocol and to verify the connectivity between computers.
 # EQUIPMENTS REQUIRED:
+<img width="837" height="229" alt="image" src="https://github.com/user-attachments/assets/845c2868-8420-4c5d-b41c-f3699fe207a2" />
 
 
      
 # IP ASSIGNMENT:
+<img width="838" height="406" alt="image" src="https://github.com/user-attachments/assets/c438b73c-69b5-4377-9b58-4607674e0be0" />
 
 
 
 # NETWORK DIAGRAM:
+<img width="943" height="538" alt="image" src="https://github.com/user-attachments/assets/5fa2d855-17f5-4c73-89b3-5881a80d1ae5" />
+
 # PROCEDURE:
 
 STEP 1: Open a Packet Tracer Software.
@@ -31,7 +35,7 @@ o PC4: 192.168.4.2, Subnet Mask: 255.255.255.0, Gateway: 192.168.4.1
 o PC5: 192.168.4.3, Subnet Mask: 255.255.255.0, Gateway: 192.168.4.1
  
 # PROGRAM
-
+```
 Router0 Configuration Steps
 Click Router 0 and in CLI TYPE THIS Router> enable
 Router# configure terminal Router(config)# interface FastEthernet0/0
@@ -53,6 +57,7 @@ Router(config-if)# ip address 192.168.4.1 255.255.255.0 Router(config-if)# no sh
 Router(config-if)# exit Router(config)# router rip Router(config-router)# version 2
 Router(config-router)# network 192.168.3.0
 Router(config-router)# network 192.168.4.0 Router(config-router)# exit
+
 Steps to Check the Output:
 1.	Verify RIP Routing Table on Routers
 To check if RIP is working and the routes are learned from the other router, you need to inspect the routing table on each router.
@@ -77,8 +82,10 @@ You can also check connectivity between the PCs on different networks to ensure 
 3.	Use the ping command: ping 192.168.3.2
 4.	If everything is configured correctly, you should receive replies from PC3.
 •	Similarly, you can ping between other PCs (e.g., from PC2 to PC5) to verify network connective
- 
+ ```
 # OUTPUT
+<img width="814" height="830" alt="image" src="https://github.com/user-attachments/assets/867ebb57-46e3-4f28-96c3-108306474b85" />
+<img width="741" height="748" alt="image" src="https://github.com/user-attachments/assets/5ac377d7-8cdf-48b3-8544-63800b5565a3" />
 
 
 
